@@ -1,2 +1,8 @@
-/out
-/target
+target
+.settings/
+src/main/resources/log4j.properties
+*.iml
+.idea/
+.classpath
+.project
+findbugs/
