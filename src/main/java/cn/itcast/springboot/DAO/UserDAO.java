@@ -1,8 +1,12 @@
-package cn.itcast.springboot.javaconfig;
+package cn.itcast.springboot.DAO;
+
+
+import cn.itcast.springboot.model.User;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class UserDAO {
     public List<User> getUsers() {
         List<User> list = new ArrayList<User>();

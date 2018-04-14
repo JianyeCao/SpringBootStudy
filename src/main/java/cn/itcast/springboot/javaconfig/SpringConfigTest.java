@@ -2,10 +2,12 @@ package cn.itcast.springboot.javaconfig;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class main {
+import javax.sql.DataSource;
+
+public class SpringConfigTest {
     public static void main(String[] args){
         AnnotationConfigApplicationContext beanFactory=new AnnotationConfigApplicationContext(SpringConfig.class);
-        UserService userService=beanFactory.getBean(UserService.class);
-        System.out.println(userService.getUsers());
+        DataSource dataSource=beanFactory.getBean(DataSource.class);
+//        System.out.println(userService.getUsers());
     }
 }

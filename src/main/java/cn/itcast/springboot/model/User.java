@@ -1,4 +1,4 @@
-package cn.itcast.springboot.javaconfig;
+package cn.itcast.springboot.model;
 
 public class User {
     private String name;

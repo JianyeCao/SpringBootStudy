@@ -10,13 +10,8 @@ import org.springframework.context.annotation.PropertySource;
 import javax.sql.DataSource;
 
 @Configuration
-@ComponentScan(basePackages = "cn.itcast.springboot.javaconfig")
 @PropertySource(value = "classpath:jdbc.properties", ignoreResourceNotFound = true)
 public class SpringConfig {
-    @Bean
-    public UserDAO getUserDAO() {
-        return new UserDAO();
-    }
 
     @Value("${jdbc.driverClassName}")
     private String jdbcDriverClassName;

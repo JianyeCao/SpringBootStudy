@@ -1,5 +1,7 @@
-package cn.itcast.springboot.javaconfig;
+package cn.itcast.springboot.service;
 
+import cn.itcast.springboot.DAO.UserDAO;
+import cn.itcast.springboot.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
